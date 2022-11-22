@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="optPane" layoutX="10.0" layoutY="46.0" prefHeight="55.0" prefWidth="700.0" styleClass="pop-pane">
+         <stylesheets>
+            <URL value="@../style/Application.css" />
+            <URL value="@../style/MainFrameContent.css" />
+         </stylesheets>
+         <children>
+            <HBox maxHeight="50.0" maxWidth="700.0" spacing="15.0" styleClass="al-baseline-left">
+               <children>
+                  <Label text="主要類別：" />
+                  <JFXTextField fx:id="tfCaseTypePrimary" prefWidth="320.0" promptText="主案類" styleClass="wd-140" />
+                  <Label layoutX="10.0" layoutY="14.0" text="次要類別：" />
+                  <JFXTextField fx:id="tfCaseTypeSecond" layoutX="70.0" layoutY="10.0" prefWidth="320.0" styleClass="wd-180" />
+                  <JFXButton fx:id="btnSubmit" styleClass="btn_create" text="新增" />
+                  <JFXButton fx:id="btnClose" styleClass="btn_close" text="關閉" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+      <FlowPane fx:id="pane">
+         <children>
+            <JFXButton text="竊盜">
+               <graphic>
+                  <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" fill="RED" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCreate" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0">
+               <graphic>
+                  <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" scaleY="0.8" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <stylesheets>
+            <URL value="@../style/Application.css" />
+            <URL value="@../style/MainFrameContent.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="al-baseline-left" />
+            <String fx:value="font-16" />
+         </styleClass>
+      </FlowPane>
+   </children>
+</VBox>

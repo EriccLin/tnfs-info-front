@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.tableview2.TableView2?>
+
+<VBox minWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="optPane" style="-fx-border-color: secondary;">
+         <children>
+            <HBox styleClass="al-baseline-left">
+               <children>
+                  <Label text="類別：">
+                     <styleClass>
+                        <String fx:value="al-baseline-right" />
+                        <String fx:value="wd-60" />
+                     </styleClass>
+                  </Label>
+                  <JFXComboBox fx:id="comboType" promptText="類型" styleClass="wd-180" />
+                  <HBox spacing="5.0" styleClass="al-baseline-right" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btnSubmit" styleClass="btn_create" text="新增" />
+                        <JFXButton fx:id="btnClose" styleClass="btn_close" text="關閉" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label graphicTextGap="0.0" text="日期：">
+                     <styleClass>
+                        <String fx:value="wd-60" />
+                        <String fx:value="al-baseline-right" />
+                     </styleClass>
+                  </Label>
+                  <VBox>
+                     <children>
+                        <HBox styleClass="al-baseline-left">
+                           <children>
+                              <JFXCheckBox fx:id="checkBoxTimeRange" graphicTextGap="0.0" text="範圍：" />
+                              <HBox fx:id="hBoxDateTime" prefWidth="200.0">
+                                 <styleClass>
+                                    <String fx:value="al-baseline-left" />
+                                    <String fx:value="wd-360" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox styleClass="al-baseline-left">
+                           <children>
+                              <Label fx:id="labelDateTimeEnd" styleClass="al-baseline-right" text="           至：" />
+                              <HBox fx:id="hBoxDateTimeEnd" prefWidth="200.0">
+                                 <styleClass>
+                                    <String fx:value="al-baseline-left" />
+                                    <String fx:value="wd-360" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0" styleClass="al-baseline-left">
+                     <children>
+                        <HBox styleClass="al-baseline-left">
+                           <children>
+                              <Label graphicTextGap="0.0" text="地點：">
+                                 <styleClass>
+                                    <String fx:value="al-baseline-right" />
+                                    <String fx:value="wd-60" />
+                                 </styleClass>
+                              </Label>
+                              <JFXTextField fx:id="location" promptText="台南市新營區中正路3號" style="-fx-pref-width: 400;" />
+                           </children>
+                           <padding>
+                              <Insets top="6.0" />
+                           </padding>
+                        </HBox>
+                        <HBox styleClass="al-baseline-left">
+                           <children>
+                              <Label graphicTextGap="0.0" text="說明：">
+                                 <styleClass>
+                                    <String fx:value="al-baseline-right" />
+                                    <String fx:value="wd-60" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets top="6.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="explanation" promptText="侵入時地" style="-fx-pref-width: 400;" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <stylesheets>
+            <URL value="@../style/Application.css" />
+            <URL value="@../style/MainFrameContent.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="al-baseline-left" />
+            <String fx:value="font-16" />
+            <String fx:value="list-pane" />
+         </styleClass>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+      <HBox fx:id="paneAddPersonInvolved" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TableView2 fx:id="table" minHeight="150.0" style="-fx-max-width: 1000;">
+               <columns>
+                  <TableColumn prefWidth="100.0" text="類型" />
+                  <TableColumn prefWidth="180.0" text="說明" />
+                  <TableColumn prefWidth="320.0" text="日期(範圍)" />
+                  <TableColumn prefWidth="320.0" text="地點" />
+                  <TableColumn text="編輯" />
+               </columns>
+               <styleClass>
+                  <String fx:value="al-center" />
+                  <String fx:value="font-16" />
+               </styleClass>
+            </TableView2>
+         </children>
+      </HBox>
+   </children>
+</VBox>

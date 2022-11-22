@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox style="-fx-pref-width: 900;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <Label text="類型：">
+               <styleClass>
+                  <String fx:value="wd-80" />
+                  <String fx:value="al-baseline-right" />
+               </styleClass>
+            </Label>
+            <JFXComboBox fx:id="comboType" styleClass="wd-140" />
+            <Label text="地點：">
+               <styleClass>
+                  <String fx:value="wd-80" />
+                  <String fx:value="al-baseline-right" />
+               </styleClass>
+            </Label>
+            <JFXTextField styleClass="wd-500" />
+         </children>
+         <styleClass>
+            <String fx:value="font-16" />
+            <String fx:value="al-baseline-left" />
+         </styleClass>
+      </HBox>
+      <HBox style="-fx-pref-height: 34;">
+         <children>
+            <Label text="勘察時間：">
+               <styleClass>
+                  <String fx:value="wd-80" />
+                  <String fx:value="al-baseline-right" />
+               </styleClass>
+            </Label>
+            <HBox fx:id="hBoxDateTime" prefWidth="200.0">
+               <styleClass>
+                  <String fx:value="al-baseline-left" />
+                  <String fx:value="wd-340" />
+               </styleClass>
+            </HBox>
+            <Label fx:id="labelDateTimeEnd" style="-fx-pref-width: 20;" styleClass="al-baseline-right" text="至" />
+            <HBox fx:id="hBoxDateTimeEnd" prefWidth="200.0">
+               <styleClass>
+                  <String fx:value="al-baseline-left" />
+                  <String fx:value="wd-340" />
+               </styleClass>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="font-16" />
+            <String fx:value="al-baseline-left" />
+         </styleClass>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="95.0" style="-fx-pref-height: 40;">
+         <children>
+            <Label text="勘察人員：">
+               <styleClass>
+                  <String fx:value="wd-80" />
+                  <String fx:value="al-baseline-right" />
+               </styleClass>
+            </Label>
+            <FlowPane fx:id="paneMember" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXButton text="新增" />
+               </children>
+               <styleClass>
+                  <String fx:value="list-pane" />
+                  <String fx:value="wd-500" />
+               </styleClass>
+            </FlowPane>
+            <HBox style="-fx-pref-width: 100;">
+               <children>
+                  <JFXButton fx:id="btnSubmit" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" ">
+                     <graphic>
+                        <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" ">
+                     <graphic>
+                        <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <styleClass>
+                  <String fx:value="al-baseline-right" />
+                  <String fx:value="ht-40" />
+               </styleClass>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="font-16" />
+            <String fx:value="al-baseline-left" />
+         </styleClass>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="al-baseline-left" />
+      <String fx:value="font-16" />
+   </styleClass>
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../style/MainFrameContent.css" />
+   </stylesheets>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</VBox>

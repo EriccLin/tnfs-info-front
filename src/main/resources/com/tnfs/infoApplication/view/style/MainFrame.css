@@ -1,0 +1,77 @@
+* {
+    head-height: 40px;
+    body-height: 740px;
+}
+
+
+.main-frame {
+    -fx-pref-width: 1280px;
+    -fx-pref-height: 780px;
+}
+
+.head-height {
+    -fx-background-color: primary;
+    -fx-pref-height: head-height;
+}
+
+.body-height {
+    -fx-pref-height: body-height;
+}
+
+.head-mark {
+    -fx-spacing: 5px;
+    -fx-padding: 5px;
+    -fx-alignment: center-left;
+    -fx-pref-width: 220px;
+}
+
+.head-mark .label, .head-mark SVGPath{
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-font-size: 24px;
+
+}
+
+.side-bar {
+    -fx-background-color: secondary-light;
+}
+
+.side-bar-menu {
+    -fx-alignment: top-center;
+    -fx-padding: 12 0 0 0;
+    -fx-pref-height: 80px;
+    -fx-min-width: 80px;
+}
+
+.side-bar-sub-menu {
+    -fx-alignment: center-right;
+    -fx-padding: 4 2 4 2;
+}
+
+.side-bar-menu:hover, .side-bar-sub-menu:hover {
+    -fx-background-color: primary-light;
+}
+
+.side-bar-menu:hover .label, .side-bar-sub-menu:hover .label, .side-bar-menu:hover SVGPath {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.side-bar-menu .label,.side-bar-sub-menu .label, .side-bar-menu SVGPath {
+    -fx-fill: secondary;
+    -fx-text-fill: secondary;
+}
+
+.side-bar-menu.active {
+    -fx-background-color: navy;
+}
+
+.side-bar-sub-menu.active {
+    -fx-background-color: primary;
+}
+
+.side-bar-menu.active .label, .side-bar-sub-menu.active .label, .side-bar-menu.active SVGPath {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}

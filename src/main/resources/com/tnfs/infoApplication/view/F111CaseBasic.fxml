@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import org.controlsfx.control.tableview2.TableView2?>
+
+<HBox fx:id="contentView" maxHeight="850.0" minWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <styleClass>
+      <String fx:value="al-top-center" />
+      <String fx:value="content-view-body" />
+   </styleClass>
+   <children>
+      <StackPane fx:id="stackPane" maxHeight="820.0">
+         <children>
+            <VBox minWidth="1000.0">
+               <children>
+                  <HBox styleClass="al-baseline-left">
+                     <children>
+                        <VBox styleClass="al-baseline-left">
+                           <children>
+                              <HBox fx:id="paneCaseTypeParent" styleClass="al-center-left">
+                                 <children>
+                                    <Label text="案　        　類：">
+                                       <styleClass>
+                                          <String fx:value="font-16" />
+                                          <String fx:value="al-baseline-right" />
+                                          <String fx:value="wd-120" />
+                                       </styleClass>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <FlowPane prefHeight="21.0" prefWrapLength="260.0" rowValignment="TOP" style="-fx-pref-width: 800;" styleClass="list-pane">
+                                       <children>
+                                          <JFXButton layoutX="170.0" layoutY="10.0" text="竊盜">
+                                             <graphic>
+                                                <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" fill="RED" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton layoutX="90.0" layoutY="10.0" text="竊盜">
+                                             <graphic>
+                                                <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" fill="RED" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton layoutX="90.0" layoutY="10.0" text="竊盜">
+                                             <graphic>
+                                                <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" fill="RED" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton ellipsisString="" graphicTextGap="0.0" styleClass="wd-120" text="新增">
+                                             <graphic>
+                                                <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox styleClass="al-baseline-left">
+                                 <children>
+                                    <Label text="案　        　名：">
+                                       <styleClass>
+                                          <String fx:value="font-16" />
+                                          <String fx:value="al-baseline-right" />
+                                          <String fx:value="wd-120" />
+                                       </styleClass>
+                                    </Label>
+                                    <JFXTextField fx:id="tfCaseName" promptText="案名" style="-fx-pref-width: 450;" styleClass="al-baseline-left" />
+                                    <HBox styleClass="al-baseline-left">
+                                       <children>
+                                          <Label text="案  卷  編  號：">
+                                             <styleClass>
+                                                <String fx:value="font-16" />
+                                                <String fx:value="al-baseline-right" />
+                                                <String fx:value="wd-120" />
+                                             </styleClass>
+                                          </Label>
+                                          <JFXTextField fx:id="tfCaseCode" prefHeight="31.0" prefWidth="158.0" styleClass="al-baseline-left" text="tfCaseCode" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="116.0" prefWidth="1000.0" styleClass="al-baseline-left">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" styleClass="wd-120" text="受理/承辦單位：" />
+                                    <JFXTextField fx:id="tfInChargeUnit">
+                                       <styleClass>
+                                          <String fx:value="al-baseline-left" />
+                                          <String fx:value="wd-220" />
+                                       </styleClass></JFXTextField>
+                                    <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="16.0" styleClass="wd-120" text="受理/承辦人員：" />
+                                    <JFXTextField fx:id="tfInCharger" layoutX="130.0" layoutY="10.0">
+                                       <styleClass>
+                                          <String fx:value="al-baseline-left" />
+                                          <String fx:value="wd-180" />
+                                       </styleClass></JFXTextField>
+                                    <Label alignment="CENTER_RIGHT" layoutX="312.0" layoutY="17.0" text="職稱：" />
+                                    <JFXComboBox fx:id="comboMRank" styleClass="wd-160" />
+                                    <JFXButton fx:id="btnInCharge" contentDisplay="CENTER" text="單位進階設定">
+                                       <styleClass>
+                                          <String fx:value="al-baseline-left" />
+                                          <String fx:value="font-16" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox styleClass="al-baseline-left">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" styleClass="wd-120" text="案   件   時  地：" />
+                                    <JFXButton fx:id="btnNewTimeLocality" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0">
+                                       <graphic>
+                                          <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" fill="#00ff22" style="-fx-fill: info;" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="144.0" styleClass="al-baseline">
+                     <children>
+                        <VBox fx:id="paneAddTimeLocality">
+                           <children>
+                              <TableView2 prefHeight="50.0" style="-fx-max-width: 1000;">
+                                 <columns>
+                                    <TableColumn prefWidth="100.0" text="類型" />
+                                    <TableColumn prefWidth="180.0" text="說明" />
+                                    <TableColumn prefWidth="320.0" text="日期(範圍)" />
+                                    <TableColumn prefWidth="320.0" text="地點" />
+                                    <TableColumn text="編輯" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="al-center" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </TableView2>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" styleClass="al-baseline-left">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" styleClass="wd-120" text="關       係     人：" />
+                        <JFXButton fx:id="btnNewInvolved" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0">
+                           <graphic>
+                              <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" fill="#00ff22" style="-fx-fill: info;" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox styleClass="al-baseline">
+                     <children>
+                        <VBox fx:id="paneAddPersonInvolved">
+                           <children>
+                              <TableView2 fx:id="table" maxHeight="200.0" prefHeight="50.0">
+                                 <columns>
+                                    <TableColumn prefWidth="30.0" text="#" />
+                                    <TableColumn prefWidth="100.0" text="關係" />
+                                    <TableColumn text="姓名" />
+                                    <TableColumn prefWidth="100.0" text="生日" />
+                                    <TableColumn prefWidth="110.0" text="身分證" />
+                                    <TableColumn text="編輯" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="al-center" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </TableView2>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" spacing="20.0">
+                     <children>
+                        <JFXButton fx:id="btnSubmit" contentDisplay="TEXT_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="498.0" layoutY="10.0" text="儲存">
+                           <graphic>
+                              <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" fill="#00ff22" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCancel" contentDisplay="TEXT_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="550.0" layoutY="10.0" text="取消">
+                           <graphic>
+                              <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" fill="#00ff22" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="al-baseline" />
+                        <String fx:value="font-16" />
+                     </styleClass>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@style/Application.css" />
+      <URL value="@style/MainFrameContent.css" />
+   </stylesheets>
+</HBox>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+
+<FlowPane maxWidth="500.0" prefWidth="500.0" prefWrapLength="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../style/MainFrameContent.css" />
+   </stylesheets>
+   <children>
+      <Label layoutX="178.0" layoutY="16.0" text="單位：">
+         <styleClass>
+            <String fx:value="wd-60" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+      </Label>
+      <FlowPane fx:id="paneUnit" prefHeight="40.0" prefWidth="200.0" styleClass="wd-330" />
+      <HBox>
+         <children>
+            <JFXButton fx:id="btnMoveUp" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" ">
+               <graphic>
+                  <SVGPath content="M8 0.5l-7.5 7.5h4.5v8h6v-8h4.5z" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnMoveDown" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" ">
+               <graphic>
+                  <SVGPath content="M8 15.5l7.5-7.5h-4.5v-8h-6v8h-4.5z" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <styleClass>
+            <String fx:value="wd-100" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+      </HBox>
+      <Label text="姓名：">
+         <styleClass>
+            <String fx:value="wd-60" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+      </Label>
+      <JFXTextField fx:id="tfName" styleClass="wd-120" />
+      <Label layoutX="10.0" layoutY="16.0" styleClass="wd-60" text="職稱：">
+         <FlowPane.margin>
+            <Insets left="10.0" />
+         </FlowPane.margin>
+      </Label>
+      <JFXComboBox fx:id="comboMRank" styleClass="wd-140">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </JFXComboBox>
+      <HBox layoutX="400.0" layoutY="10.0">
+         <styleClass>
+            <String fx:value="wd-100" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+         <children>
+            <JFXButton fx:id="btnSubmit" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" " textFill="#00ff11">
+               <graphic>
+                  <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" fill="#00ff2f" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" ">
+               <graphic>
+                  <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" fill="RED" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="al-baseline" />
+      <String fx:value="font-16" />
+   </styleClass>
+</FlowPane>

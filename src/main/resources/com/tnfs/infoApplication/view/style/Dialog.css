@@ -1,0 +1,45 @@
+.dialog {
+    -fx-pref-width: 500px;
+    -fx-background-color: white;
+}
+
+.dialog-icon {
+    -fx-alignment: center;
+    -fx-pref-height: 240px;
+    -fx-pref-width: 160px;
+    -fx-padding: 20px;
+    -fx-background-color: secondary;
+}
+
+.dialog-icon SVGPath {
+    -fx-fill: secondary-light;
+}
+
+.dialog-content {
+    -fx-alignment: center-left;
+    -fx-pref-width: 340px;
+    -fx-padding: 20px;
+}
+
+.dialog-title {
+    -fx-font-size: 24px;
+    -fx-alignment: center-left;
+    -fx-pref-width: 440px;
+    /*-fx-padding: 20px;*/
+}
+
+.dialog-message {
+    -fx-font-size: 16px;
+    -fx-alignment: center-left;
+    /*-fx-pref-width: 440px;*/
+    -fx-padding: 20 0 30 0;
+
+}
+
+.sp-24 {
+    -fx-spacing: 24px;
+}
+
+.wid-120 {
+    -fx-pref-width: 100px;
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="optPane" maxHeight="100.0" maxWidth="810.0" prefHeight="100.0" prefWidth="810.0" styleClass="pop-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="140.0" spacing="5.0">
+         <children>
+            <HBox styleClass="al-baseline-left">
+               <children>
+                  <Label graphicTextGap="0.0" text="統號：">
+                     <styleClass>
+                        <String fx:value="al-baseline-right" />
+                        <String fx:value="wd-60" />
+                     </styleClass>
+                  </Label>
+                  <JFXTextField fx:id="tfIdNumber" promptText="A123456789" style="-fx-pref-width: 160;" />
+                  <Label graphicTextGap="0.0" text="姓名：">
+                     <styleClass>
+                        <String fx:value="al-baseline-right" />
+                        <String fx:value="wd-60" />
+                     </styleClass>
+                  </Label>
+                  <JFXTextField fx:id="tfName" promptText="某某某" style="-fx-pref-width: 160;" />
+                  <Label text="性別：">
+                     <styleClass>
+                        <String fx:value="al-baseline-right" />
+                        <String fx:value="wd-60" />
+                     </styleClass>
+                  </Label>
+                  <JFXComboBox fx:id="comboGender" minWidth="160.0" promptText="性別" />
+                  <HBox spacing="10.0" styleClass="al-baseline-right" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btnSubmit" styleClass="btn_create" text="新增" />
+                        <JFXButton fx:id="btnClose" layoutX="20.0" layoutY="10.0" styleClass="btn_create" text="關閉" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label graphicTextGap="0.0" text="生日：">
+                     <styleClass>
+                        <String fx:value="al-baseline-right" />
+                        <String fx:value="wd-60" />
+                     </styleClass>
+                  </Label>
+                  <HBox fx:id="hBoxBirthdate" minWidth="160.0">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="wd-160" />
+                        <String fx:value="font-16" />
+                        <String fx:value="al-baseline-left" />
+                     </styleClass>
+                     <children>
+                        <HBox fx:id="hBoxDateTime" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" style="-fx-pref-height: 40;">
+                           <children>
+                              <HBox fx:id="hBoxDate" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXTextField fx:id="tfDate" styleClass="wd-160" text="110/01/01">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnDate" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" text=" ">
+                                       <graphic>
+                                          <SVGPath content="M16 16h-16v-14h2v12h12v-12h2zM3 6h2v2h-2zM7 6h2v2h-2zM11 6h2v2h-2zM3 10h2v2h-2zM7 10h2v2h-2zM11 12v-2h2zM4 3v-2c0-0.552 0.447-1 1-1s1 0.448 1 1v2c0 0.553-0.447 1-1 1s-1-0.447-1-1zM10 3v-2c0-0.552 0.447-1 1-1s1 0.448 1 1v2c0 0.553-0.447 1-1 1s-1-0.447-1-1z" />
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="font-12" />
+                                          <String fx:value="al-center" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="wd-160" />
+                                    <String fx:value="al-baseline-left" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <stylesheets>
+                              <URL value="@../style/Application.css" />
+                              <URL value="@../style/MainFrameContent.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="al-baseline-left" />
+                              <String fx:value="font-16" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <JFXCheckBox fx:id="chBoxIsDead" text="已歿">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+               </children>
+               <styleClass>
+                  <String fx:value="al-baseline-left" />
+                  <String fx:value="font-16" />
+               </styleClass>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../style/MainFrameContent.css" />
+   </stylesheets>
+</Pane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" styleClass="font-16" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="initPane">
+         <children>
+            <HBox spacing="10.0" styleClass="al-baseline-left">
+               <children>
+                  <Label fx:id="labelSimpleName" text="Label" />
+                  <JFXButton fx:id="btnSubmit" styleClass="btn_create" text="確認" />
+                  <JFXButton fx:id="btnCancel" styleClass="btn_create" text="取消" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane fx:id="optCreatePane" style="-fx-background-radius: 5; -fx-background-color: pink;" styleClass="font-16">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="90.0" spacing="10.0" styleClass="al-center-left">
+               <children>
+                  <StackPane styleClass="al-baseline-left">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <VBox styleClass="al-baseline-left">
+                           <children>
+                              <JFXTextField fx:id="tfName" prefColumnCount="0" promptText="單位名稱" style="-fx-pref-width: 200;" styleClass="wd-120" />
+                              <Label fx:id="labelSuperviserName" graphicTextGap="0.0" layoutX="10.0" layoutY="79.0" text="(上級單位：)">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label fx:id="labelWarning" alignment="TOP_LEFT" graphicTextGap="0.0" style="-fx-text-fill: red;" text="警語" StackPane.alignment="BOTTOM_LEFT">
+                           <StackPane.margin>
+                              <Insets bottom="25.0" />
+                           </StackPane.margin>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <VBox styleClass="al-baseline-left">
+                     <children>
+                        <JFXButton fx:id="btnCreateSubmit" styleClass="btn_create" text="新增" />
+                        <JFXButton fx:id="btnCreateClose" styleClass="btn_create" text="取消">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <stylesheets>
+            <URL value="@../style/Application.css" />
+            <URL value="@../style/MainFrameContent.css" />
+         </stylesheets>
+      </Pane>
+      <Pane fx:id="mainPane" style="-fx-border-color: secondary; -fx-background-color: derive(primary-light,99%); -fx-border-radius: 5; -fx-background-radius: 5;" styleClass="font-16">
+         <children>
+            <VBox fx:id="showPane" minHeight="100.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../style/Application.css" />
+            <URL value="@../style/MainFrameContent.css" />
+         </stylesheets>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../style/MainFrameContent.css" />
+   </stylesheets>
+</VBox>

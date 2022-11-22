@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="content-view" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox styleClass="content-view-header">
+         <children>
+            <Label styleClass="title" text="案件查詢" />
+         </children>
+      </HBox>
+      <Label fx:id="label_title" layoutX="30.0" layoutY="30.0" text="新增案類">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_LEFT" layoutY="70.0" prefHeight="143.0" prefWidth="470.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="70.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label fx:id="label_unit111" prefHeight="23.0" prefWidth="90.0" text="案　　類：">
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <HBox fx:id="hbox_case_type_combos" prefHeight="30.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <JFXComboBox fx:id="combo_case_type_primary" prefHeight="23.0" prefWidth="90.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="combo_case_type_secodary" prefHeight="23.0" prefWidth="220.0" />
+                              <Label fx:id="label_combo">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CHECK_CIRCLE" size="14" style="-fx-fill: green;" />
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hbox_case_type_tf" prefHeight="30.0">
+                           <children>
+                              <JFXTextField fx:id="tf_case_type" prefWidth="320.0" promptText="你可以換一個輸入方法" />
+                              <Label fx:id="label_tf">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CHECK_CIRCLE" size="14" style="-fx-fill: green;" />
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="btn_submit" styleClass="btn_create" text="新增" />
+                  <JFXButton fx:id="btn_close" styleClass="btn_close" text="關閉" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </VBox>
+
+   </children>
+   <stylesheets>
+      <URL value="@style/Application.css" />
+      <URL value="@style/MainFrameContent.css" />
+   </stylesheets>
+
+</VBox>

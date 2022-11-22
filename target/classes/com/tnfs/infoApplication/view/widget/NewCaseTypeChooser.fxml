@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox spacing="10.0" styleClass="widget-content" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox fx:id="hbox_case_type_combos" prefHeight="30.0" styleClass="sp-10">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnCombo" text="選單" />
+                  <JFXComboBox fx:id="combo_case_type_primary" prefHeight="23.0" styleClass="wd-120">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="combo_case_type_secodary" prefHeight="23.0" prefWidth="220.0" styleClass="wd-220" />
+                  <Label fx:id="label_combo">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHECK_CIRCLE" size="14" style="-fx-fill: green;" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="hbox_case_type_tf" prefHeight="30.0" styleClass="sp-10">
+               <children>
+                  <JFXButton fx:id="btnTextfield" text="輸入" />
+                  <JFXTextField fx:id="tf_case_type" prefWidth="320.0" promptText="你可以換一個輸入方法" styleClass="wd-350" />
+                  <Label fx:id="label_tf">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHECK_CIRCLE" size="14" style="-fx-fill: green;" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="btnSubmit" styleClass="btn_create" text="新增" />
+                  <JFXButton fx:id="btnClose" styleClass="btn_close" text="關閉" />
+               </children>
+            </HBox>
+         </children>
+         <stylesheets>
+            <URL value="@../style/Application.css" />
+            <URL value="@../style/MainFrameContent.css" />
+         </stylesheets>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+
+<FlowPane prefWidth="940.0" prefWrapLength="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../style/MainFrameContent.css" />
+   </stylesheets>
+   <children>
+      <Label layoutX="178.0" layoutY="16.0" text="單位：">
+         <styleClass>
+            <String fx:value="wd-60" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+      </Label>
+      <JFXTextField fx:id="tfUnitName" promptText="單位名稱" styleClass="wd-120" />
+      <HBox fx:id="paneUnit" styleClass="al-baseline">
+         <children>
+            <Label text="上級單位：">
+               <styleClass>
+                  <String fx:value="wd-80" />
+                  <String fx:value="al-baseline-right" />
+               </styleClass>
+            </Label>
+            <JFXTextField fx:id="tfSuperviserUnitName" promptText="單位名稱" styleClass="wd-150" />
+         </children>
+      </HBox>
+      <StackPane>
+         <children>
+            <JFXButton fx:id="btnUnitSqueeze" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" lineSpacing="4.0" text=" ">
+               <graphic>
+                  <SVGPath content="M9.609 3.724c-0.52-0.521-1.365-0.521-1.885 0l-4.277 4.276 4.277 4.276c0.26 0.261 0.601 0.391 0.943 0.391s0.683-0.13 0.943-0.391c0.521-0.521 0.521-1.365 0-1.885l-2.39-2.391 2.39-2.391c0.521-0.521 0.521-1.365 0-1.885z" scaleX="2.0" scaleY="2.0" translateX="1.0" translateY="1.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnUnitExpand" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" lineSpacing="4.0" text=" ">
+               <graphic>
+                  <SVGPath content="M5.724 3.724c-0.521 0.521-0.521 1.365 0 1.885l2.39 2.391-2.39 2.391c-0.521 0.521-0.521 1.365 0 1.885 0.26 0.261 0.601 0.391 0.943 0.391s0.683-0.13 0.943-0.391l4.277-4.276-4.277-4.276c-0.52-0.521-1.365-0.521-1.885 0z" scaleX="2.0" scaleY="2.0" translateX="2.0" translateY="1.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+      <Label layoutX="10.0" layoutY="16.0" styleClass="wd-60" text="職稱：">
+         <FlowPane.margin>
+            <Insets left="10.0" />
+         </FlowPane.margin>
+      </Label>
+      <JFXComboBox fx:id="comboMRank" styleClass="wd-140">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </JFXComboBox>
+      <Label text="姓名：">
+         <styleClass>
+            <String fx:value="wd-60" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+      </Label>
+      <JFXTextField fx:id="tfName" styleClass="wd-120" />
+      <HBox layoutX="400.0" layoutY="10.0">
+         <styleClass>
+            <String fx:value="wd-100" />
+            <String fx:value="al-baseline-right" />
+         </styleClass>
+         <children>
+            <JFXButton fx:id="btnSubmit" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" " textFill="#00ff11">
+               <graphic>
+                  <SVGPath content="M16 6h-6v-6h-4v6h-6v4h6v6h4v-6h6z" fill="#00ff2f" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" styleClass="al-baseline-right" text=" ">
+               <graphic>
+                  <SVGPath content="M15 12.199l-4.203-4.199 4.203-4.199-2.801-2.801-4.199 4.201-4.201-4.201-2.799 2.801 4.199 4.199-4.199 4.199 2.799 2.801 4.201-4.201 4.199 4.201z" fill="RED" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="al-baseline" />
+      <String fx:value="font-16" />
+   </styleClass>
+</FlowPane>

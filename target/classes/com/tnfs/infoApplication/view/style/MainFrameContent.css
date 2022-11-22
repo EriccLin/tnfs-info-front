@@ -1,0 +1,251 @@
+
+
+.content-view {
+    -fx-font-family: "Times New Roman";
+}
+
+.content-view-header {
+    -fx-font-family: "Times New Roman";
+}
+.content-view-header-level0 {
+    -fx-background-color: derive(secondary, 30%);
+}
+.content-view-header-level1 {
+    -fx-background-color: derive(secondary, 60%);
+    -fx-background-radius: 40;
+}
+.content-view-header-level2 {
+    -fx-background-color: derive(secondary, 90%);
+}
+
+.content-view-header > .title {
+    -fx-font-size: 24px;
+}
+
+
+.content-view-body {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 16px;
+    -fx-background-color: derive(secondary, 99%);
+}
+
+.grid-width {
+    -fx-max-width: 1000px;
+    -fx-min-width: 1000px;
+    -fx-font-size: 16px;
+}
+
+.block-width {
+    -fx-font-size: 16px;
+    -fx-pref-width: 500px;
+    -fx-alignment: baseline-left;
+}
+
+.block-width-double {
+    -fx-font-size: 16px;
+    -fx-pref-width: 1000px;
+    -fx-alignment: baseline-left;
+}
+
+.blank-label {
+    -fx-pref-height: 25px;
+    -fx-pref-width: 120px;
+    -fx-alignment: baseline-right;
+}
+
+.blank-label-sm {
+    -fx-pref-height: 25px;
+    -fx-pref-width: 60px;
+    -fx-alignment: baseline-right;
+}
+
+
+.blank-lg {
+    -fx-pref-width: 500px;
+    -fx-alignment: baseline-left;
+}
+.blank-lg > .jfx-text-field {
+    -fx-pref-width: 320px;
+}
+
+.blank-md {
+    -fx-pref-height: 40px;
+    -fx-pref-width: 380px;
+    -fx-alignment: baseline-left;
+}
+.blank-md > .jfx-text-field, .blank-md > .jfx-combo-box {
+    -fx-pref-width: 240px;
+}
+.ht-40 {
+    -fx-pref-height: 40px;
+}
+
+
+.blank-sm {
+    -fx-pref-width: 180px;
+    -fx-alignment: baseline-left;
+    /*-fx-padding: 20 10 20 10;*/
+}
+.blank-sm > .jfx-text-field, .blank-sm > .jfx-combo-box {
+    -fx-pref-width: 110px;
+}
+
+.pane {
+    -fx-alignment: baseline-left;
+    -fx-padding: 2 0 5 0;
+}
+
+.pop-pane {
+    -fx-background-radius: 5px;
+    -fx-background-color: derive(primary-light,99%);
+    -fx-border-radius: 5px;
+    -fx-border-color: secondary;
+    -fx-font-size: 16px;
+}
+
+.pop-pane:hover {
+    -fx-background-color: secondary-light2;
+}
+
+.list-pane {
+    -fx-border-radius: 5px;
+    -fx-alignment: center-left;
+    -fx-hgap: 5px;
+    /*-fx-vgap: 5px;*/
+}
+
+.list-pane:hover {
+    -fx-background-color: secondary-light2;
+}
+
+.my-alert {
+    -fx-border-color: red;
+    -fx-border-width: 2;
+}
+
+.my-alert-simple {
+    -fx-fill: red;
+}
+
+.selected_content {
+    -fx-background-color: #D3EDFF;
+    -fx-background-radius: 2px;
+}
+
+.widget-content {
+    -fx-alignment: center-left;
+    -fx-spacing: 20px;
+    -fx-padding: 20 0 20 0;
+}
+
+.wd-750 {
+    -fx-pref-width: 750px;
+}
+.wd-500 {
+    -fx-pref-width: 500px;
+}
+.wd-380 {
+    -fx-pref-width: 380px;
+}
+.wd-440 {
+    -fx-pref-width: 440px;
+}
+
+.wd-360 {
+    -fx-pref-width: 360;
+}
+.wd-350 {
+    -fx-pref-width: 350;
+}
+
+.wd-340 {
+    -fx-pref-width: 340;
+}
+.wd-330 {
+    -fx-pref-width: 330;
+}
+
+.wd-320 {
+    -fx-pref-width: 320;
+}
+
+.wd-300 {
+    -fx-pref-width: 300;
+}
+
+.wd-240 {
+    -fx-pref-width: 240;
+}
+
+.wd-220 {
+    -fx-pref-width: 220;
+}
+
+.wd-180 {
+    -fx-pref-width: 180px;
+}
+.wd-160 {
+    -fx-pref-width: 160px;
+}
+.wd-150 {
+    -fx-pref-width: 150px;
+}
+.wd-140 {
+    -fx-pref-width: 140px;
+}
+.wd-120 {
+    -fx-pref-width: 120px;
+}
+
+.wd-100 {
+    -fx-pref-width: 100px;
+}
+.wd-80 {
+    -fx-pref-width: 80px;
+}
+.wd-60 {
+    -fx-pref-width: 60px;
+}
+.wd-40 {
+    -fx-pref-width: 40px;
+}
+.wd-30 {
+    -fx-pref-width: 30px;
+}
+.ht-80 {
+    -fx-pref-height: 80px;
+}
+.sp-10 {
+    -fx-spacing: 10;
+}
+.font-16 {
+    -fx-font-size: 16px;
+}
+.font-12 {
+    -fx-font-size: 12px;
+}
+.jfx-tab-pane .tab-header-area .tab-header-background {
+    /*-fx-opacity: 0.0;*/
+    -fx-background-color: secondary-light !important;
+}
+
+.jfx-tab-pane:top .depth-container .tab-header-area .headers-region .tab-selected-line {
+    -fx-background-color: secondary-light2;
+}
+
+.jfx-tab-pane .tab-header-area .tab-selected-line {
+    -fx-background-color: #ffffff;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler
+{
+    -jfx-rippler-fill: blue;
+}
+
+.jfx-tab-pane .tab .tab-label
+{
+    -fx-text-fill: black;
+    -fx-pref-width: 160px;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}

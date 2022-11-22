@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="contentView" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="content-view" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox minWidth="800.0" spacing="10.0">
+         <children>
+            <Label styleClass="title" text="新增案件F11" />
+            <HBox HBox.hgrow="ALWAYS" />
+         </children>
+         <styleClass>
+            <String fx:value="content-view-header" />
+            <String fx:value="content-view-header-level0" />
+            <String fx:value="al-top-left" />
+            <String fx:value="font-16" />
+         </styleClass>
+      </HBox>
+      <JFXTabPane fx:id="tabPane">
+         <tabs>
+            <Tab fx:id="tabCaseBasic" text="基本資料" />
+            <Tab fx:id="tabCaseInvestigation" text="出勤紀錄" />
+            <Tab fx:id="tabCaseRecord" text="勘察報告" />
+         </tabs>
+      </JFXTabPane>
+   </children>
+   <stylesheets>
+      <URL value="@style/Application.css" />
+      <URL value="@style/MainFrameContent.css" />
+   </stylesheets>
+</VBox>
